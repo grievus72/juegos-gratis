@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Portal de Juegos Gratis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .category {
+            background: linear-gradient(135deg, #ff6b6b, #feca57);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-10px);
+        }
+
+        .category h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .game-link {
+            display: block;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .game-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border-color: #ff6b6b;
+            color: #ff6b6b;
+        }
+
+        .game-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Portal de Juegos Gratis</h1>
+        <p class="subtitle">¡Los mejores sitios para jugar online sin descargar nada!</p>
+
+        <div class="categories">
+            <div class="category">
+                <h2>🕹️ Juegos Clásicos</h2>
+                <div class="game-grid">
+                    <a href="https://www.crazygames.com/" class="game-link" target="_blank">
+                        <div class="game-icon">🎮</div>
+                        CrazyGames
+                    </a>
+                    <a href="https://www.poki.com/es/" class="game-link" target="_blank">
+                        <div class="game-icon">⚡</div>
+                        Poki
+                    </a>
+                    <a href="https://juegos.kongregate.com/es" class="game-link" target="_blank">
+                        <div class="game-icon">⭐</div>
+                        Kongregate
+                    </a>
+                </div>
+            </div>
+
+            <div class="category" style="background: linear-gradient(135deg, #48dbfb, #0abde3);">
+                <h2>🎯 Juegos de Acción</h2>
+                <div class="game-grid">
+                    <a href="https://www.minijuegos.com/" class="game-link" target="_blank">
+                        <div class="game-icon">🔫</div>
+                        MiniJuegos
+                    </a>
+                    <a href="https://juegos123.net/" class="game-link" target="_blank">
+                        <div class="game-icon">⚔️</div>
+                        Juegos 123
+                    </a>
+                    <a href="https://www.juegos.com/" class="game-link" target="_blank">
+                        <div class="game-icon">💥</div>
+                        Juegos.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="category" style="background: linear-gradient(135deg, #ff9ff3, #f368e0);">
+                <h2>🧩 Juegos de Pensar</h2>
+                <div class="game-grid">
+                    <a href="https://www.coolmathgames.com/" class="game-link" target="_blank">
+                        <div class="game-icon">🧠</div>
+                        Coolmath Games
+                    </a>
+                    <a href="https://www.agame.com/es/" class="game-link" target="_blank">
+                        <div class="game-icon">🔍</div>
+                        AGame
+                    </a>
+                </div>
+            </div>
+
+            <div class="category" style="background: linear-gradient(135deg, #54a0ff, #2e86de);">
+                <h2>🚗 Juegos Móviles</h2>
+                <div class="game-grid">
+                    <a href="https://play.google.com/store/games" class="game-link" target="_blank">
+                        <div class="game-icon">📱</div>
+                        Google Play Games
+                    </a>
+                    <a href="https://www.crazygames.com/t/mobile-games" class="game-link" target="_blank">
+                        <div class="game-icon">🎮</div>
+                        CrazyGames Mobile
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✅ Todos los juegos son gratis y se juegan directamente en el navegador</p>
+            <p>📱 Compatible con PC, móvil y tablet</p>
+        </div>
+    </div>
+</body>
+</html>
